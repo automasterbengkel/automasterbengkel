@@ -1,0 +1,389 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Variable */
+:root {
+    --main-color: #b2000f;
+    --second-color: #3b0000;
+    --text-color: #401b1b;
+    --bg-color: #fff;
+
+    /* Box Shadow */
+    --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+section {
+    padding: 4.5rem 0 3rem;
+}
+
+.container {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: block;
+    width: 100%;
+    background: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 200px;
+}
+
+.bx {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding: 8px 17px;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    transition: 0.7s;
+}
+
+.btn {
+    padding: 8px 22px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+}
+
+.btn:hover {
+    background: var(--second-color);
+    transition: 0.7s;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+
+/* =================== HOME =================== */
+.home {
+    margin-top: 5rem;
+    background: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-text {
+    padding-left: 35px;
+}
+
+.home-text h1 {
+    color: var(--bg-color);
+    font-size: 2rem;
+
+}
+
+.home-text p {
+    color: var(--bg-color);
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+/* ---- About ----- */
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+    gap: 2rem;
+}
+
+.about-img img {
+    border-radius: 3rem 0 3rem 3rem;
+    width: 400px;
+}
+
+.about-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.about-text h2 {
+    font-size: 1.7rem;
+}
+
+.about-text p {
+    font-size: 0.938rem;
+    margin: 1rem 0 2rem;
+}
+
+/* ---- Services ---- */
+
+.services h1 {
+    text-align: center;
+}
+
+.services h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.layanan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2.4rem;
+}
+
+.services p {
+    font-size: 12px;
+}
+
+.services .boxServ {
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.services .boxServ:hover {
+    background: var(--second-color);
+    color: var(--bg-color);
+    transition: 0.7s;
+}
+
+.services .boxServ .bx {
+    padding: 10px;
+    border-radius: 50%;
+    background: #f6f6fe;
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+
+/* ---- Posts ----- */
+.posts {
+    background: #fbfbfb;
+    border-radius: 2rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    font-weight: 300;
+    color: var(--main-color);
+}
+
+.heading h2 {
+    font-size: 1.7rem;
+}
+
+.boxPosts h3 {
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.heading p {
+    font-size: 12px;
+}
+
+.content {
+    display: flex;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+    padding: 0 50px;
+}
+
+.posts-container .boxPosts {
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.posts-container .boxPosts:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.posts-container .boxPosts img {
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ---- Newsletter ---- */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 1.7rem;
+}
+
+.newsletter form {
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    padding: 6px 10px;
+    border-radius: 5rem;
+}
+
+.newsletter form input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.newsletter #email-box {
+    width: 280px;
+}
+
+.newsletter .btn {
+    padding: 12px 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* ---- Sponsor ----  */
+/* .logoSponsor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.logoSponsor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    gap: 2.9rem;
+}
+
+.logoSponsor img {
+    width: 160px;
+}
+
+
+
+
+/* ---- Footer ---- */
+.footer {
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5rem 5rem 0 0;
+}
+
+.footer img {
+    width: 160px;
+    margin-top: 10px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2rem;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3 {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer h2,
+.footer p,
+.footer a {
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--bg-color);
+}
+
+.footer-box a:hover,
+.footer-box p:hover,
+.footer-box h2:hover {
+    color: var(--second-color);
+}
+
+.copyright-content {
+    background: var(--second-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 80px 10px 80px;
+}
+
+.copyright-content h4,
+.copyright-content a {
+    color: var(--bg-color);
+    font-size: 12px;
+    font-weight: 200;
+}
