@@ -40,14 +40,146 @@
     </header>
 
     <!-- Home -->
-    <section class="home container" id="home">
-        <div class="home-text">
+
+    <!-- <div class="home-text">
             <h1>Authorized Dealer</h1>
             <h1 style="font-size: 44px;">BRIDGESTONE</h1>
             <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari. </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+        </div> -->
+    <div class="slider">
+        <!-- List Item -->
+        <div class="list">
+            <div class="item active">
+                <img src="/assets/img/bridgestone.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Bridgestone</h2>
+                    <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari.</p>
+                    <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Mobil 1</h2>
+                    <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari.</p>
+                    <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/bridgestone.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Bridgestone</h2>
+                    <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari.</p>
+                    <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/bridgestone.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Bridgestone</h2>
+                    <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari.</p>
+                    <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+
         </div>
-    </section>
+
+        <!-- Button Arrows -->
+        <div class="arrows">
+            <button id="prev">
+                < </button>
+                    <button id="next">
+                        > </button>
+        </div>
+
+        <!-- Thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/bridgestone.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/home.jpg">
+                <div class="deskripsi">
+                    Name Slider
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- About -->
     <section class="about container" id="about">
@@ -243,5 +375,7 @@
     </div>
 
 </body>
+
+<script src="/assets/js/app.js"></script>
 
 </html>
