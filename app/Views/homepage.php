@@ -16,6 +16,25 @@
 </head>
 
 <body>
+
+    <?php
+
+    $youtubeKey = 'AIzaSyC--W8zF4f5pJeGCqaC_Cp3xk8BZlp-KTI';
+    $youtubeUser = 'UCfqWhPC7n0z0PI7H4rqEP0g';
+    $max_result = 5;
+
+    $apiData = @file_get_contents('https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=' . $youtubeUser . '&maxResult' . $max_result . '&key=' . $youtubeKey);
+
+    if ($apiData) {
+        $videoList = json_decode($apiData);
+        // dd($videoList);
+    } else {
+        echo "API SALAH";
+    }
+
+    ?>
+
+
     <!-- Navbar -->
     <header>
         <div class="nav container">
@@ -60,32 +79,135 @@
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg" alt="">
+                <img src="/assets/img/3m.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>3M</h2>
+                    <p>Kami mengurangi beban kabel listrik sehingga dapat menyalurkan lebih banyak listrik ke lebih banyak orang. Kami membantu produsen menggunakan lebih sedikit sambil menghasilkan lebih banyak.</p>
+                    <a href="https://www.3m.co.id/3M/en_ID/company-id/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/autovision.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Autovision</h2>
+                    <p>Berdiri pada tahun 2006 dengan komitmen menjadi perusahaan penyedia dan distribusi nasional untuk suku cadang dan perlengkapan kendaraan bermotor roda dua, roda empat, dan truk/ bis kualitas prima untuk merek autovision.</p>
+                    <a href="https://www.autovision.co.id/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/vente.jfif" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Vente</h2>
+                    <p>Kebutuhan upgrade Audio yang paling sesuai dengan kenyamanan dan qualitas.</p>
+                    <a href="https://www.instagram.com/venteofficial.id/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/hurricane.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Hurricane</h2>
+                    <p>Kami menantang Anda untuk menjadi lebih baik. Kekuatan yang tak tertandingi. Perjalanan tanpa akhir. Tidak ada yang lebih baik dari ini. Semua dalam satu, lebih mengoptimalkan kendaraan Anda, kelistrikan yang jauh lebih optimal, sehingga kinerja kendaraan menjadi lebih maksimal.</p>
+                    <a href="https://hurricane.co.id/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/meguiars.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Meguiars</h2>
+                    <p>Semangat Meguiar terhadap perawatan mobil melampaui penelitian, pengembangan, dan pembuatan produk-produk terkemuka dalam kategori berkualitas tinggi. Misi kami adalah untuk mendorong minat masyarakat terhadap mobil mereka. Kami berusaha untuk memberdayakan semua orang dengan kemampuan untuk menciptakan hasil menakjubkan yang dapat mereka banggakan karena kami percaya setiap perjalanan itu penting!</p>
+                    <a href="https://meguiars-indonesia.co.id/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/mobil.jpg" alt="">
                 <div class="deskripsi">
                     <p>Autorized Dealer</p>
                     <h2>Mobil 1</h2>
-                    <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari.</p>
-                    <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+                    <p>Oli Mobil 1™ adalah oli mesin sintetik lengkap terbaik untuk meningkatkan performa mesin. Mobil 1™ Triple Action Power+, mewujudkan Performa, Proteksi, dan Kebersihan mesin yang luar biasa sekaligus Efisiensi Bahan Bakar. Jelajahi tentang oli mesin full synthetic performa tinggi kami yang membantu memperpanjang usia mesin dan proteksi sempurna bagi mobil Anda dalam setiap kondisi berkendara.</p>
+                    <a href="https://www.mobil.co.id/id-id/our-products/mobil-1" target="_blank" class="btn">Read More</a>
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/bridgestone.jpg" alt="">
+                <img src="/assets/img/sikkens.png" alt="">
                 <div class="deskripsi">
                     <p>Autorized Dealer</p>
-                    <h2>Bridgestone</h2>
-                    <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari.</p>
-                    <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+                    <h2>Sikkens</h2>
+                    <p>Bodyshop paling berwawasan di seluruh dunia yang mencari solusi cat premier memilih Sikkens.
+                        Sebagai bagian dari AkzoNobel, salah satu produsen coating terkemuka di dunia, pertumbuhan bisnis pelanggan kami menjadi fokus bisnis inti dan terkait langsung dengan pernyataan posisi Sikkens, yaitu ‘Creating Together’.</p>
+                    <a href="https://www.sikkensvr.com/id/" target="_blank" class="btn">Read More</a>
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/bridgestone.jpg" alt="">
+                <img src="/assets/img/sonax.jpg" alt="">
                 <div class="deskripsi">
                     <p>Autorized Dealer</p>
-                    <h2>Bridgestone</h2>
-                    <p>Pendiri Bridgestone, Shojiro Ishibashi, berusaha menciptakan sebuah perusahaan yang didedikasikan untuk "Menyumbang Masyarakat dengan Mutu Tertinggi." Inilah yang kami perjuangkan setiap hari.</p>
-                    <a href="https://www.bridgestone.co.id/in/why-bridgestone/mission-values" target="_blank" class="btn">Read More</a>
+                    <h2>Sonax</h2>
+                    <p>Terlepas dari apakah itu mobil kecil, kendaraan mid-range atau kendaraan mewah - baik di motorsport, di dunia tuning atau di dunia mobil klasik: SONAX selalu berada di sisi penggemar dan ahli mobil dalam hal ini. penampilan mobil yang sempurna.
+                        Sejarah SONAX dimulai pada tahun 1903. Pada saat itu, Franz Hoffmann, kakek buyut dari pemilik perusahaan saat ini di Neuburg an der Donau, menambang silika, mineral yang sangat halus yang digunakan dalam pemoles rumah tangga.</p>
+                    <a href="https://sonax.id/" target="_blank" class="btn">Read More</a>
                 </div>
             </div>
+            <div class="item">
+                <img src="/assets/img/venom.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Venom</h2>
+                    <p>Sejak Venom didirikan pada tahun 1998, kami telah mengembangkan dan memproduksi speaker dalam mobil untuk pecinta audio, pecinta suara, dan pecinta musik. Selama bertahun-tahun, kami telah memenangkan banyak penghargaan untuk sistem speaker kami, dan kami sangat sukses dalam kejuaraan sound-off. Hal mendasar bagi kesuksesan kami adalah semangat untuk mereproduksi musik yang dimiliki oleh seluruh direktur perusahaan. Hal ini memberikan dorongan untuk mengembangkan sistem speaker yang sempurna.</p>
+                    <a href="https://venom-audio.com/home.php" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/amcare.png" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Automaster Engine Care</h2>
+                    <p>Automaster Engine Care solusi perawatan dan perlindungan mesin mobil anda.</p>
+                    <a href="https://www.automastereginecare.com" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/michelin.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Michelin</h2>
+                    <p>Temukan kiat-kiat dan saran kami untuk menghemat bahan bakar, meningkatkan keselamatan dan kenyamanan Anda di jalan. Semua yang ingin Anda ketahui tentang ban untuk mobil, SUV, atau van Anda.</p>
+                    <a href="https://www.michelin.co.id/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/conti.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Continental</h2>
+                    <p>Continental mengembangkan teknologi dan layanan perintis untuk mobilitas orang dan barang yang berkelanjutan dan terhubung. Didirikan pada tahun 1871, perusahaan teknologi ini menawarkan solusi yang aman, efisien, cerdas, dan terjangkau untuk kendaraan, mesin, lalu lintas, dan transportasi.</p>
+                    <a href="https://www.continental.com/en/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/castrol.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Castrol</h2>
+                    <p>Di Castrol, kami menembus batasan dan bergerak maju menuju perubahan. Menyambut hal baru untuk mengakselerasikan kemajuan.</p>
+                    <a href="https://www.castrol.com/id_id/indonesia/home.html" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/eneos.jpg" alt="">
+                <div class="deskripsi">
+                    <p>Autorized Dealer</p>
+                    <h2>Eneos</h2>
+                    <p>ENEOS X Prime adalah oli mesin premium terbaru yang dikembangkan oleh ENEOS, Perusahaan Oli No. 1 di Jepang, dengan Standar API SP / ILSAC GF-6 membantu penghematan bahan bakar, mencegah terjadinya Low Speed ​​Pre-Ignition (LSPI), dan peningkatan ketahanan terhadap keausan rantai. Memberikan pengalaman berkendara yang jauh lebih nyaman, mesin menjadi lebih halus dan senyap dengan performa akselerasi yang lebih baik.</p>
+                    <a href="https://www.castrol.com/id_id/indonesia/home.html" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+
 
         </div>
 
@@ -100,81 +222,93 @@
         <!-- Thumbnail -->
         <div class="thumbnail">
             <div class="item active">
-                <img src="/assets/img/home.jpg">
-                <div class="deskripsi">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/img/home.jpg">
-                <div class="deskripsi">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/img/home.jpg">
-                <div class="deskripsi">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
                 <img src="/assets/img/bridgestone.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    Bridgestone
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/3m.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    3M
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/autovision.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    Autovision
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/vente.jfif">
                 <div class="deskripsi">
-                    Name Slider
+                    Vente
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/hurricane.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    Hurricane
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/meguiars.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    Meguiars
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/mobil.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    Mobil 1
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/sikkens.png">
                 <div class="deskripsi">
-                    Name Slider
+                    Sikkens
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/sonax.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    Sonax
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/img/home.jpg">
+                <img src="/assets/img/venom.jpg">
                 <div class="deskripsi">
-                    Name Slider
+                    Venom
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/amcare.png">
+                <div class="deskripsi">
+                    Automaster Enginecare
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/michelin.jpg">
+                <div class="deskripsi">
+                    Michelin
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/conti.jpg">
+                <div class="deskripsi">
+                    Continental
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/castrol.jpg">
+                <div class="deskripsi">
+                    Castrol
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/img/eneos.jpg">
+                <div class="deskripsi">
+                    Eneos
                 </div>
             </div>
         </div>
@@ -319,6 +453,14 @@
             <img src="assets/logo/logoConti.png" alt="">
             <img src="assets/logo/logoCastrol.png" alt="">
             <img src="assets/logo/LogoEneos.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- youtube -->
+    <section class="youbute-container container">
+        <div class="contentYT">
+            <iframe width="855" height="490" style="border-radius: 20px;" src="https://www.youtube.com/embed/YigZAm6RtQA" title="Acara Tomo Jabar x HBT | Sabtu 24 September 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
     </section>

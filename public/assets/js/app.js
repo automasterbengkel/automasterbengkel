@@ -7,14 +7,16 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 let countItem = items.lenght;
 let itemActive = 0;
 
-//Event Klik
+//Event next Klik
 next.onclick = function () {
     itemActive = itemActive + 1;
     if (itemActive >= countItem) {
         itemActive = 0;
     }
-    showSlider()
+    showSlider();
 }
+
+// Event Prev Clik
 prev.onclick = function () {
     itemActive = itemActive - 1;
     if (itemActive < 0) {
@@ -24,9 +26,9 @@ prev.onclick = function () {
 }
 
 //auto run slider
-let refreshInterval = setInterval(() => {
-    next.click();
-}, 3000)
+// let refreshInterval = setInterval(() => {
+//     next.click();
+// }, 6000)
 
 function showSlider() {
     //remove item active old
@@ -39,3 +41,37 @@ function showSlider() {
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
 }
+
+// clear auto time run slider
+// clearInterval(refreshInterval);
+// refreshInterval = setInterval(() => {
+//     next.click();
+// }, 6000)
+
+// click thumbnail
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        itemActive = index;
+        showSlider();
+    })
+})
+
+
+// ================ YOUTUBE ==============
+// const youtubeKey = 'AIzaSyC--W8zF4f5pJeGCqaC_Cp3xk8BZlp-KTI';
+// const youtubeUser = 'UCfqWhPC7n0z0PI7H4rqEP0g';
+// const subCount = document.getElementById('subCount');
+// const Max_Result = 5;
+
+// let getSubscribers = () => {
+//     fetch(`https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${youtubeUser}&key=${youtubeKey}`)
+//         .then(response => {
+//             return response.json()
+//         })
+//         .then(data => {
+//             console.log(data);
+//             subCount.innerHTML = data["items"][0].statistics.subscriberCount;
+//         })
+// }
+
+// getSubscribers();
