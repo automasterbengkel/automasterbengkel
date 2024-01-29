@@ -16,25 +16,6 @@
 </head>
 
 <body>
-
-    <?php
-
-    $youtubeKey = 'AIzaSyC--W8zF4f5pJeGCqaC_Cp3xk8BZlp-KTI';
-    $youtubeUser = 'UCfqWhPC7n0z0PI7H4rqEP0g';
-    $max_result = 5;
-
-    $apiData = @file_get_contents('https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=' . $youtubeUser . '&maxResult' . $max_result . '&key=' . $youtubeKey);
-
-    if ($apiData) {
-        $videoList = json_decode($apiData);
-        // dd($videoList);
-    } else {
-        echo "API SALAH";
-    }
-
-    ?>
-
-
     <!-- Navbar -->
     <header>
         <div class="nav container">
@@ -59,6 +40,7 @@
     </header>
 
     <!-- Home -->
+
 
     <!-- <div class="home-text">
             <h1>Authorized Dealer</h1>
@@ -378,48 +360,58 @@
         </div>
     </section>
 
+
+    <!-- instagram -->
+
     <!-- Posts -->
     <section class="posts container" id="article">
         <div class="heading">
             <span>Recent</span>
             <h2>Our Feeds</h2>
-            <p>Untuk merawat interior dan eksterior mobilmu. Pastikan interior dan eksterior mobilmu tetap terawat dan terhindar dari berbagai masalah.</p>
         </div>
 
         <div class="posts-container container">
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2lr9aJJC5Y/" target="_blank">
+                    <img src="assets/img/1.png" alt="">
+                </a>
             </div>
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2jpaBmrO8U/" target="_blank">
+                    <img src="assets/img/2.png" alt="">
+                </a>
             </div>
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2jnjXKLOFw/" target="_blank">
+                    <img src="assets/img/3.png" alt="">
+                </a>
             </div>
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2jnMT3LiV7/" target="_blank">
+                    <img src="assets/img/4.png" alt="">
+                </a>
             </div>
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2hLgcYJAOu/" target="_blank">
+                    <img src="assets/img/5.png" alt="">
+                </a>
             </div>
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2hLFx5pyjO/" target="_blank">
+                    <img src="assets/img/6.png" alt="">
+                </a>
             </div>
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2gemmbpqOH/" target="_blank">
+                    <img src="assets/img/7.png" alt="">
+                </a>
                 <div class="content">
                 </div>
             </div>
             <div class="boxPosts">
-                <img src="assets/img/home.jpg" alt="">
-                <h3>20/01/2024</h3>
+                <a href="https://www.instagram.com/p/C2ehYFsLS2p/" target="_blank">
+                    <img src="assets/img/8.png" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -459,6 +451,10 @@
 
     <!-- youtube -->
     <section class="youbute-container container">
+        <div class="subName">
+            <h1><?php $subname ?></h1>
+        </div>
+
         <div class="contentYT">
             <iframe width="855" height="490" style="border-radius: 20px;" src="https://www.youtube.com/embed/YigZAm6RtQA" title="Acara Tomo Jabar x HBT | Sabtu 24 September 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>

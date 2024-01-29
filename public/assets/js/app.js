@@ -61,6 +61,7 @@ thumbnails.forEach((thumbnail, index) => {
 // const youtubeKey = 'AIzaSyC--W8zF4f5pJeGCqaC_Cp3xk8BZlp-KTI';
 // const youtubeUser = 'UCfqWhPC7n0z0PI7H4rqEP0g';
 // const subCount = document.getElementById('subCount');
+// // const subName = document.getElementById('subName');
 // const Max_Result = 5;
 
 // let getSubscribers = () => {
@@ -70,8 +71,26 @@ thumbnails.forEach((thumbnail, index) => {
 //         })
 //         .then(data => {
 //             console.log(data);
-//             subCount.innerHTML = data["items"][0].statistics.subscriberCount;
+//             // subCount.innerHTML = data["items"][0].statistics.subscriberCount;
+//             subName.innerHTML = data['items'][0].snippet.thumbnails.medium.url;
 //         })
 // }
 
 // getSubscribers();
+
+// const clientId = '524193dba5dbff8e893898b08aa33b74';
+// const accessToken = 'IGQWRNTlo5TlI2MlAzR2xMQllUSGlfc0hjUkpzUU12aGtSRjZA2Nk94TjVVQ3hta3V0ZAnZAhaFR5VzRVcHlIUFhDV29FX09JZAjNocTExWHlFbWpTeVlsT0UtZAXdEY0J3TTAwWFhIZAVR2WGF4VEFmcktXUi1aOHZAUQUkZD';
+// const feedIG = document.getElementById('feedsIG');
+
+
+// let getFeed = () => {
+//     fetch('https://graph.instagram.com/me/media?fields=id,media_type,media_url,username&access_token=IGQWRNTlo5TlI2MlAzR2xMQllUSGlfc0hjUkpzUU12aGtSRjZA2Nk94TjVVQ3hta3V0ZAnZAhaFR5VzRVcHlIUFhDV29FX09JZAjNocTExWHlFbWpTeVlsT0UtZAXdEY0J3TTAwWFhIZAVR2WGF4VEFmcktXUi1aOHZAUQUkZD')
+//         .then(response => {
+//             return response.json()
+//         })
+//         .then(data => {
+//             console.log(data);
+//         })
+// }
+
+// getFeed();
