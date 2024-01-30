@@ -391,20 +391,20 @@
 <section class="sponsor-container container">
     <h2 style="text-align: center; margin-bottom:30px" data-aos="fade-right" data-aos-duration="1000">SPONSOR</h2>
     <div class="logoSponsor container" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/logo/logoBS.png" alt="">
-        <img src="assets/logo/logo3M.png" alt="">
-        <img src="assets/logo/logoAutovision.png" alt="">
-        <img src="assets/logo/logoVente.png" alt="">
-        <img src="assets/logo/logoHurricane.png" alt="">
-        <img src="assets/logo/logoMeguiars.png" alt="">
-        <img src="assets/logo/logoMobil1.png" alt="">
-        <img src="assets/logo/logoSikkens.png" alt="">
-        <img src="assets/logo/logoSonax.png" alt="">
-        <img src="assets/logo/logoVenom.png" alt="">
-        <img src="assets/logo/logoAM.png" alt="">
-        <img src="assets/logo/logoMichelin.png" alt="">
-        <img src="assets/logo/logoConti.png" alt="">
-        <img src="assets/logo/logoCastrol.png" alt="">
+        <img src="assets/logo/LogoBS.png" alt="">
+        <img src="assets/logo/Logo3M.png" alt="">
+        <img src="assets/logo/LogoAutovision.png" alt="">
+        <img src="assets/logo/LogoVente.png" alt="">
+        <img src="assets/logo/LogoHurricane.png" alt="">
+        <img src="assets/logo/LogoMeguiars.png" alt="">
+        <img src="assets/logo/LogoMobil1.png" alt="">
+        <img src="assets/logo/LogoSikkens.png" alt="">
+        <img src="assets/logo/LogoSonax.png" alt="">
+        <img src="assets/logo/LogoVenom.png" alt="">
+        <img src="assets/logo/LogoAM.png" alt="">
+        <img src="assets/logo/LogoMichelin.png" alt="">
+        <img src="assets/logo/LogoConti.png" alt="">
+        <img src="assets/logo/LogoCastrol.png" alt="">
         <img src="assets/logo/LogoEneos.png" alt="">
     </div>
 

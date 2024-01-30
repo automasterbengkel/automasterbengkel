@@ -1,0 +1,8 @@
+<ifModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteBase /
+RewriteRule ^$ public/homepage.php [L]
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+
+</ifModule>
