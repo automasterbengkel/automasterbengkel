@@ -77,7 +77,7 @@
             <div class="footer-box">
                 <h3>Contact Us</h3>
                 <a href="tel:02287242079" target="_blank">02287242079 (Office)</a>
-                <a href="https://wa.me/081222246849" target="_blank">081220790754 (WhatApps)</a>
+                <a href="https://wa.me/081222246849" target="_blank">081222246849 (WhatApps)</a>
                 <a href="mailto: info@automasterbengkel.com" target="_blank">info@automasterbengkel.com</a>
                 <div class="social" style="margin-top: 15px;">
                     <a href="https://www.instagram.com/automasterbengkel/" target="_blank"><i class="bx bxl-instagram" style="color: var(--bg-color); font-size:25px"></i></a>
