@@ -35,4 +35,12 @@ class Pages extends BaseController
         ];
         return view('pages/contactPage', $data);
     }
+
+    public function sCarwash()
+    {
+        $data = [
+            'title' => 'Carwash |'
+        ];
+        return view('pages/services/carwashPage', $data);
+    }
 }

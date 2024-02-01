@@ -164,91 +164,91 @@
         <div class="item active">
             <img src="/assets/img/bridgestone.jpg">
             <div class="deskripsi">
-                Bridgestone
+                <p>Bridgestone</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/3m.jpg">
             <div class="deskripsi">
-                3M
+                <p>3M</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/autovision.jpg">
             <div class="deskripsi">
-                Autovision
+                <p>Autovision</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/vente.jfif">
             <div class="deskripsi">
-                Vente
+                <p>Vente</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/hurricane.jpg">
             <div class="deskripsi">
-                Hurricane
+                <p>Vente</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/meguiars.jpg">
             <div class="deskripsi">
-                Meguiars
+                <p>Meguiars</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/mobil.jpg">
             <div class="deskripsi">
-                Mobil 1
+                <p>Mobil 1</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/sikkens.png">
             <div class="deskripsi">
-                Sikkens
+                <p>Sikkens</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/sonax.jpg">
             <div class="deskripsi">
-                Sonax
+                <p>Sonax</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/venom.jpg">
             <div class="deskripsi">
-                Venom
+                <p>Venom</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/amcare.png">
             <div class="deskripsi">
-                Automaster Enginecare
+                <p>Automaster Enginecare</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/michelin.jpg">
             <div class="deskripsi">
-                Michelin
+                <p>Michelin</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/conti.jpg">
             <div class="deskripsi">
-                Continental
+                <p>Continental</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/castrol.jpg">
             <div class="deskripsi">
-                Castrol
+                <p>Castrol</p>
             </div>
         </div>
         <div class="item">
             <img src="/assets/img/eneos.jpg">
             <div class="deskripsi">
-                Eneos
+                <p>Eneos</p>
             </div>
         </div>
     </div>
@@ -276,7 +276,7 @@
     </div>
 
     <div class="layanan" data-aos="fade-right" data-aos-duration="1000">
-        <a href="" style="color:var(--second-color)">
+        <a href="/carwash" style="color:var(--second-color)">
             <div class="boxServ">
                 <i class='bx bxs-car-wash'></i>
                 <h3>Car Wash</h3>

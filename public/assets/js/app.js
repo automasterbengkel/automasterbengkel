@@ -57,6 +57,8 @@ thumbnails.forEach((thumbnail, index) => {
 })
 
 
+// VIDEO AUTOPLAY
+
 // ================ YOUTUBE ==============
 // const youtubeKey = 'AIzaSyC--W8zF4f5pJeGCqaC_Cp3xk8BZlp-KTI';
 // const youtubeUser = 'UCfqWhPC7n0z0PI7H4rqEP0g';

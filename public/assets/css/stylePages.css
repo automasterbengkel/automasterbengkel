@@ -497,6 +497,74 @@ a {
 }
 
 
+
+/* ============== CARWASH PAGE ============= */
+video {
+    width: 90%;
+    border-radius: 0 40px 0 40px;
+
+}
+
+.carwashPage {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carwashTitle h2,
+.carwashTitle p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carwashList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carwashList p {
+    font-size: 14px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    gap: 20px;
+    box-shadow: 0 3px 3px -3px #333;
+    padding: 0 0 50px 0;
+}
+
+.list img {
+    width: 450px;
+    border-radius: 0 20px 0 20px;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+.sponsor-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.logoSponsor {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.logoSponsor img {
+    width: 160px;
+}
+
+
 /* ---- Footer ---- */
 .footer {
     background: var(--main-color);
